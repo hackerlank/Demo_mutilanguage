@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wellcome">欢迎</string>
+    <string name="name">十</string>
+    <string name="pass">密码</string>
+    <string name="question">不记得你的密码？</string>
+    <string name="dangnhap">注册</string>
+</resources>

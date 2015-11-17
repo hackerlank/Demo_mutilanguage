@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wellcome">ようこそ</string>
+    <string name="name">使用者</string>
+    <string name="pass">パスワード</string>
+    <string name="question">あなたのパスワードを覚えていないのですか？</string>
+    <string name="dangnhap">ログイン</string>
+</resources>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">multi language</string>
+    <string name="wellcome">Welcome</string>
+    <string name="name">User Name</string>
+    <string name="pass">Password</string>
+    <string name="question">Password</string>
+    <string name="dangnhap">Login</string>
+
+
+</resources>
