@@ -5,4 +5,11 @@
     <string name="pass">Mat Khau</string>
     <string name="question">Ban khong nho mat khau?</string>
     <string name="dangnhap">Dang nhap</string>
+    <string-array name="languages">
+        <item>Chọn ngôn ngữ</item>
+        <item>Tiếng Anh</item>
+        <item>Tiếng Việt</item>
+        <item>Tiếng Nhật</item>
+        <item>Tiếng Trung</item>
+    </string-array>
 </resources>

@@ -5,4 +5,11 @@
     <string name="pass">パスワード</string>
     <string name="question">あなたのパスワードを覚えていないのですか？</string>
     <string name="dangnhap">ログイン</string>
+    <string-array name="languages">
+        <item>言語を選択する</item>
+        <item>いぎりる</item>
+        <item>べとなむ</item>
+        <item>にほん</item>
+        <item>中国の</item>
+    </string-array>
 </resources>

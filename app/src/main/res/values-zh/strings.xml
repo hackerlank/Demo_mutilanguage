@@ -5,4 +5,11 @@
     <string name="pass">密码</string>
     <string name="question">不记得你的密码？</string>
     <string name="dangnhap">注册</string>
+    <string-array name="languages">
+        <item>選擇語言</item>
+        <item>Igiriru</item>
+        <item>越南</item>
+        <item>日本</item>
+        <item>中國</item>
+    </string-array>
 </resources>
