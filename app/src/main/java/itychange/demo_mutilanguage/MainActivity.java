@@ -1,32 +1,44 @@
 package itychange.demo_mutilanguage;
 
-import android.content.Intent;
 import android.content.res.Configuration;
 import android.content.res.Resources;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.DisplayMetrics;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Spinner;
 import android.widget.AdapterView.OnItemSelectedListener;
+import android.widget.Spinner;
 
 import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Spinner spinner;
-    private Toolbar toolbar;
+    // UI
+    Spinner spinner;
+    Toolbar toolbar;
+
+    // data
+    boolean savedBundle = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+        if (!savedBundle) {
+            super.onCreate(savedInstanceState);
+            savedBundle = true;
+        }
+
         setContentView(R.layout.activity_main);
+
         spinner = (Spinner) findViewById(R.id.spinner);
-        toolbar= (Toolbar) findViewById(R.id.toolbar);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+
         setSupportActionBar(toolbar);
-        getSupportActionBar().setTitle("Demo");
+        if (getSupportActionBar() != null) {
+            getSupportActionBar().setTitle(getString(R.string.app_name));
+        }
+
         spinner.setOnItemSelectedListener(new OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> arg0, View arg1, int arg2, long arg3) {
@@ -56,8 +68,11 @@ public class MainActivity extends AppCompatActivity {
         Configuration conf = res.getConfiguration();
         conf.locale = myLocale;
         res.updateConfiguration(conf, dm);
-        Intent refresh = new Intent(this, MainActivity.class);
-        startActivity(refresh);
+
+//        Intent refresh = new Intent(this, MainActivity.class);
+//        startActivity(refresh);
+
+        this.onCreate(null);
     }
 
 }
